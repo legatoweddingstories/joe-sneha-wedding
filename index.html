@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f7efdc">
+<title>Joe & Sneha | Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#f8f0df;--ink:#27251d;--green:#173b25;--gold:#b18a43;--wine:#762e35}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;background:radial-gradient(ellipse at 20% 10%,#fffaf0 0,#f5ecd8 55%,#eee1c6 100%);font-size:19px}
+button,a{font:inherit}.wrap{width:min(920px,92%);margin:auto}.ornament{border:1px solid var(--gold);outline:1px solid #c9a96b;outline-offset:5px;padding:clamp(24px,5vw,56px);position:relative;background:rgba(255,252,243,.78);box-shadow:0 15px 55px #6e54201c}.ornament:before,.ornament:after{content:"✦";position:absolute;color:var(--gold);font-size:22px;background:var(--ivory);padding:0 9px}.ornament:before{top:-15px;left:50%;transform:translateX(-50%)}.ornament:after{bottom:-15px;left:50%;transform:translateX(-50%)}
+.hero{min-height:100svh;display:grid;place-items:center;padding:35px 0}.kicker{letter-spacing:.18em;text-transform:uppercase;font-size:13px;color:#80622f}.script{font-family:"Great Vibes",cursive;color:var(--green);font-weight:400}.hero h1{font-size:clamp(52px,10vw,94px);line-height:.95;margin:12px 0}.names{font-size:clamp(26px,5vw,43px);color:var(--green);font-weight:700;letter-spacing:.04em;margin:12px 0}.amp{font-family:"Great Vibes";font-size:46px;color:var(--gold);margin:0}.quote{font-style:italic;font-size:clamp(19px,3vw,25px);line-height:1.25;max-width:620px;margin:12px auto}.rule{width:160px;height:1px;background:var(--gold);margin:22px auto;position:relative}.rule:after{content:"❧";position:absolute;left:50%;top:-17px;transform:translateX(-50%);background:#fbf5e8;color:var(--gold);padding:0 10px;font-size:23px}
+.intro{margin:20px 0 8px}.family{font-size:clamp(17px,2.6vw,21px);line-height:1.35;margin:4px auto 15px}.family strong{font-weight:600}.address{font-size:18px;line-height:1.25;margin:0 auto}.invite-copy{max-width:650px;margin:28px auto 8px;font-size:22px;line-height:1.3}.details{padding:65px 0;text-align:center}.details h2,.section-title{font-weight:500;font-size:clamp(36px,6vw,55px);margin:0 0 15px;color:var(--green)}.date{font-size:clamp(24px,4vw,34px);font-weight:600}.time{font-size:27px}.venue-label{font-family:"Great Vibes";font-size:42px;color:var(--wine);margin:20px 0 0}.venue{font-size:25px;line-height:1.3;margin:0}.btn{display:inline-block;border:1px solid var(--gold);background:var(--green);color:#fff9ed;text-decoration:none;padding:12px 24px;border-radius:2px;cursor:pointer;transition:.2s}.btn:hover{background:#285438;transform:translateY(-2px)}.btn.secondary{background:transparent;color:var(--green)}.section{padding:45px 0;text-align:center}.countdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:24px 0}.timebox{min-width:85px;padding:14px 10px;border:1px solid #c6a86d;background:#fffaf0}.timebox b{display:block;font-size:36px;color:var(--green);font-weight:600}.timebox span{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#765b31}.small{font-size:16px;color:#655d4d}.rsvp-card{max-width:650px;margin:20px auto;padding:28px;border:1px solid #c6a86d;background:#fffaf0}.footer{padding:50px 0;text-align:center;color:var(--green)}.footer .script{font-size:48px;color:var(--wine)}
+.envelope-screen{position:fixed;inset:0;z-index:10;background:linear-gradient(145deg,#f9f0df,#eadbbd);display:grid;place-items:center;padding:20px;transition:opacity .8s,visibility .8s}.envelope-screen.opened{opacity:0;visibility:hidden;pointer-events:none}.envelope{text-align:center;max-width:520px;width:100%}.envelope-art{width:min(360px,82vw);height:235px;margin:25px auto;position:relative;filter:drop-shadow(0 15px 18px #60451f30);cursor:pointer}.env-back{position:absolute;inset:0;background:#e7d4ae;border:1px solid #b18a43}.env-front{position:absolute;inset:0;background:#f5e8cc;clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%);border:1px solid #b18a43}.env-flap{position:absolute;inset:0;background:#d9c294;clip-path:polygon(0 0,100% 0,50% 62%);transform-origin:top;transition:transform .9s;z-index:2}.seal{position:absolute;z-index:3;left:50%;top:55%;transform:translate(-50%,-50%);width:57px;height:57px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#b64a4b,#741f2a 70%);color:#f6dfad;display:grid;place-items:center;border:2px solid #d5b66e;font-size:25px}.envelope.open .env-flap{transform:rotateX(180deg)}.envelope.open .seal{opacity:0;transition:.3s}.open-hint{color:#755b31;letter-spacing:.12em;text-transform:uppercase;font-size:13px}.music{position:fixed;right:16px;bottom:16px;z-index:5;border:1px solid var(--gold);background:#fff9ed;color:var(--green);border-radius:50px;padding:10px 15px;box-shadow:0 4px 18px #0002}.music:disabled{opacity:.55}
+@media(max-width:560px){body{font-size:18px}.ornament{padding:25px 17px}.family{font-size:17px}.address{font-size:16px}.invite-copy{font-size:19px}.rsvp-card{padding:20px 14px}.timebox{min-width:70px}.timebox b{font-size:30px}}
+</style>
+</head>
+<body>
+<div class="envelope-screen" id="envelopeScreen">
+  <div class="envelope">
+    <div class="kicker">A joyful celebration awaits</div>
+    <div class="envelope-art" id="envelopeArt" role="button" tabindex="0" aria-label="Open wedding invitation">
+      <div class="env-back"></div><div class="env-front"></div><div class="env-flap"></div><div class="seal">J&nbsp;♥&nbsp;S</div>
+    </div>
+    <div class="names">Joe <span class="amp">&</span> Sneha</div>
+    <p class="open-hint">Tap the seal to open your invitation</p>
+    <button class="btn" id="openButton">Open invitation</button>
+  </div>
+</div>
+
+<main>
+<section class="hero">
+ <div class="wrap ornament" style="text-align:center">
+  <div class="kicker">With the blessings of the Almighty</div>
+  <p class="quote">“The Lord has done great things for us,<br>and we are filled with joy.”</p>
+  <div class="small">— Psalms 126:3</div>
+  <div class="rule"></div>
+  <p class="intro">Together with their families,</p>
+  <div class="names">JOE ISRAEL STANLY</div>
+  <p class="family"><strong>Son of Mr. P.X. Stanly &amp; Mrs. Antonia Stanly</strong><br>
+  Punnakkattussery House, Thoppumpady,<br>Cochin, Ernakulam</p>
+  <div class="rule"></div>
+  <div class="names">SNEHA RACHEL MATHEW</div>
+  <p class="family"><strong>Daughter of Late Mr. Mathew Chandy &amp; Mrs. Jiji Mathew</strong><br>
+  Karippalampuriyil House, Thekkemala,<br>Kozhencherry, Pathanamthitta</p>
+  <p class="invite-copy">request the pleasure of your company and blessings<br>as they celebrate their</p>
+  <h1 class="script">Wedding</h1>
+  <div class="rule"></div>
+  <div class="date">Monday, 30th November 2026</div>
+  <div class="time">3:30 PM</div>
+  <div class="venue-label">Venue</div>
+  <p class="venue"><strong>Cochin Club</strong><br>St. Francis Church Road<br>Fort Kochi, Kochi, Kerala</p>
+  <div class="rule"></div>
+  <p class="script" style="font-size:42px;color:var(--wine);margin:8px 0">With Love and Best Wishes</p>
+  <div class="kicker" style="color:var(--green)">From the beloved families</div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="wrap">
+  <h2 class="section-title">Counting down to forever</h2>
+  <p class="small">We can't wait to celebrate with you.</p>
+  <div class="countdown" aria-live="polite">
+   <div class="timebox"><b id="days">--</b><span>Days</span></div>
+   <div class="timebox"><b id="hours">--</b><span>Hours</span></div>
+   <div class="timebox"><b id="minutes">--</b><span>Minutes</span></div>
+   <div class="timebox"><b id="seconds">--</b><span>Seconds</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="wrap">
+  <h2 class="section-title">Join us</h2>
+  <p>Monday, 30 November 2026 · 3:30 PM</p>
+  <p class="venue"><strong>Cochin Club</strong><br>St. Francis Church Road<br>Fort Kochi, Kochi, Kerala</p>
+  <p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Cochin+Club%2C+St+Francis+Church+Road%2C+Fort+Kochi%2C+Kochi%2C+Kerala">Open location in Google Maps</a></p>
+ </div>
+</section>
+
+<section class="section">
+ <div class="wrap">
+  <h2 class="section-title">Kindly respond</h2>
+  <div class="rsvp-card">
+   <p>It would mean so much to have you with us. Please let us know if you can join the celebration.</p>
+   <p class="small">The RSVP form will be connected in the next setup step.</p>
+   <a class="btn secondary" href="PASTE_GOOGLE_FORM_URL_HERE" id="rsvpButton">Respond to invitation</a>
+  </div>
+ </div>
+</section>
+
+<footer class="footer">
+ <div class="wrap">
+  <div class="script">Joe &amp; Sneha</div>
+  <p>With love and gratitude, we look forward to celebrating with you.</p>
+  <div class="kicker">30 · 11 · 2026</div>
+ </div>
+</footer>
+</main>
+
+<audio id="weddingMusic" loop preload="none"><source src="wedding-music.mp3" type="audio/mpeg"></audio>
+<button class="music" id="musicButton" type="button">♫ Play music</button>
+<script>
+const envelope=document.getElementById('envelopeArt');
+const screen=document.getElementById('envelopeScreen');
+function openInvite(){envelope.classList.add('open');setTimeout(()=>screen.classList.add('opened'),650)}
+document.getElementById('openButton').addEventListener('click',openInvite);
+envelope.addEventListener('click',openInvite);
+envelope.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openInvite()}});
+const weddingDate=new Date('2026-11-30T15:30:00+05:30').getTime();
+function updateCountdown(){
+ const diff=weddingDate-Date.now();
+ if(diff<=0){['days','hours','minutes','seconds'].forEach(id=>document.getElementById(id).textContent='0');return}
+ const d=Math.floor(diff/86400000),h=Math.floor(diff%86400000/3600000),m=Math.floor(diff%3600000/60000),s=Math.floor(diff%60000/1000);
+ document.getElementById('days').textContent=d;document.getElementById('hours').textContent=h;document.getElementById('minutes').textContent=m;document.getElementById('seconds').textContent=s;
+}
+updateCountdown();setInterval(updateCountdown,1000);
+const audio=document.getElementById('weddingMusic'),musicButton=document.getElementById('musicButton');
+musicButton.addEventListener('click',async()=>{if(audio.paused){try{await audio.play();musicButton.textContent='Ⅱ Pause music'}catch(e){musicButton.textContent='Add music file first'}}else{audio.pause();musicButton.textContent='♫ Play music'}});
+document.getElementById('rsvpButton').addEventListener('click',e=>{if(e.currentTarget.getAttribute('href')==='PASTE_GOOGLE_FORM_URL_HERE'){e.preventDefault();alert('The RSVP form will be connected in the next setup step.')}});
+</script>
+</body>
+</html>
